@@ -5,7 +5,7 @@ import { StyleSheet } from 'react-native-web';
 const AppBar = () => {
     return (
         <Appbar.Header style={styles.appbar}>
-            <Appbar.Content title="Login" />
+            <Appbar.Content title="App" />
             <Appbar.Action icon="magnify" onPress={() => console.log('Buscar presionado')} />
             <Appbar.Action icon="dots-vertical" onPress={() => console.log('Mas opciones presionadas')} />
         </Appbar.Header>

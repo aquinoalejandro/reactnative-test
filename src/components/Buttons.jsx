@@ -8,7 +8,7 @@ const Buttons = () => {
     const navigation = useNavigation();
     return (
         <View style={{ flexDirection: 'row', justifyContent: 'space-between'}}>
-                                <Text style={styles.text}>Messi app</Text>
+                                <Text style={styles.text}>Dragon Ball app</Text>
                                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                                 <Button
                                     onPress={() => navigation.navigate('login')}
@@ -26,7 +26,20 @@ const Buttons = () => {
                                     buttonStyle={{ borderRadius: 15, backgroundColor: 'rgba(2,76,139,255)' }}
                                     title={'Iniciar Sesión'}
                                 />
+                                <Button
+                                    onPress={() => navigation.navigate('api')}
+                                    icon={
+                                        <Ionicons name="enter-outline" size={24} color="white" style={styles.icon} />
+                                    }
+                                    buttonStyle={{ borderRadius: 15, backgroundColor: 'rgba(2,76,139,255)' }}
+                                    title={'APIs'}
+
+                                    
+                                    
+                                />
                                 </View>
+                                
+                                
                             </View>
     )}
 
